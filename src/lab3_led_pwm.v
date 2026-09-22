@@ -2,7 +2,7 @@
 module lab3_led_pwm #(
   parameter integer CLK_HZ = 50_000_000,
   parameter integer PWM_HZ = 1_000,
-  parameter integer LEVELS = 5,
+  parameter integer LEVELS = 10,
   parameter integer DEBOUNCE_CYCLES = 1_000_000
 ) (
   input  wire clk_50mhz,
