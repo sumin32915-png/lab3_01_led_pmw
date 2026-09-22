@@ -1,0 +1,5 @@
+[1] PASS 로그
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_19_led_pwm\build\sim\run-d7db9a1d0f0d44eaa852bc93dcfcc448\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB3_LED_PWM_PASS checks=4
+C:\Users\sumin\lab3_19_led_pwm\sim\tb_led_pwm.sv:61: $finish called at 3831000 (1ps)
