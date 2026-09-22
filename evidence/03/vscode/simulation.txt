@@ -4,7 +4,27 @@ VCD info: dumpfile wave.vcd opened for output.
 LAB3_LED_PWM_PASS checks=4
 C:\Users\sumin\lab3_19_led_pwm\sim\tb_led_pwm.sv:61: $finish called at 3831000 (1ps)
 
-[2] 수정 로그
+[2] FAIL 로그
+RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_19_led_pwm\src -I C:\Users\sumin\lab3_19_led_pwm\sim -s tb_led_pwm -o C:\Users\sumin\lab3_19_led_pwm\build\sim\run-97b743bd081348d1b8762120d6ae02a2\sim.vvp C:\Users\sumin\lab3_19_led_pwm\src\button_onepulse.v C:\Users\sumin\lab3_19_led_pwm\src\pwm_channel.v C:\Users\sumin\lab3_19_led_pwm\src\lab3_led_pwm.v C:\Users\sumin\lab3_19_led_pwm\sim\tb_led_pwm.sv
 
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_19_led_pwm\build\sim\run-97b743bd081348d1b8762120d6ae02a2\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+FATAL: C:\Users\sumin\lab3_19_led_pwm\sim\tb_led_pwm.sv:43: level=3 high=6
+       Time: 1231000  Scope: tb_led_pwm.expect_level
+
+ERROR: 종료 코드 1: C:\Users\sumin\lab3_19_led_pwm\build\sim\run-97b743bd081348d1b8762120d6ae02a2\simulation.log
+
+ *  The terminal process "C:\Users\sumin\AppData\Local\Microsoft\WindowsApps\python.EXE 'tools/fpga_lab.py', 'simulate'" terminated with exit code: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
 
 [3] 복구 로그
+RUN C:\msys64\mingw64\bin\iverilog.EXE -g2012 -Wall -I C:\Users\sumin\lab3_19_led_pwm\src -I C:\Users\sumin\lab3_19_led_pwm\sim -s tb_led_pwm -o C:\Users\sumin\lab3_19_led_pwm\build\sim\run-afd43b05550e4c7b9278423b4883bded\sim.vvp C:\Users\sumin\lab3_19_led_pwm\src\button_onepulse.v C:\Users\sumin\lab3_19_led_pwm\src\pwm_channel.v C:\Users\sumin\lab3_19_led_pwm\src\lab3_led_pwm.v C:\Users\sumin\lab3_19_led_pwm\sim\tb_led_pwm.sv
+
+RUN C:\msys64\mingw64\bin\vvp.EXE -N C:\Users\sumin\lab3_19_led_pwm\build\sim\run-afd43b05550e4c7b9278423b4883bded\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB3_LED_PWM_PASS checks=4
+C:\Users\sumin\lab3_19_led_pwm\sim\tb_led_pwm.sv:61: $finish called at 3831000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\sumin\lab3_19_led_pwm\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 

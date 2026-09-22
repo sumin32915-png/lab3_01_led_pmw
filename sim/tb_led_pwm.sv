@@ -11,7 +11,7 @@ module tb_led_pwm;
   lab3_led_pwm #(
     .CLK_HZ(1000),
     .PWM_HZ(100),
-    .LEVELS(5),
+    .LEVELS(10),
     .DEBOUNCE_CYCLES(2)
   ) dut (
     .clk_50mhz(clk_50mhz),
